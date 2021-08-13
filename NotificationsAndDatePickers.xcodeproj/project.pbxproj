@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8105E26926C69A9300C22BE4 /* DatePickerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8105E26826C69A9300C22BE4 /* DatePickerExampleView.swift */; };
+		8105E26B26C69AA000C22BE4 /* CombinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8105E26A26C69AA000C22BE4 /* CombinationView.swift */; };
 		812F873B26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F873A26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift */; };
-		812F873D26C69A32002F0BE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F873C26C69A32002F0BE6 /* ContentView.swift */; };
+		812F873D26C69A32002F0BE6 /* NotificationsExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F873C26C69A32002F0BE6 /* NotificationsExampleView.swift */; };
 		812F873F26C69A33002F0BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812F873E26C69A33002F0BE6 /* Assets.xcassets */; };
 		812F874226C69A33002F0BE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812F874126C69A33002F0BE6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8105E26826C69A9300C22BE4 /* DatePickerExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerExampleView.swift; sourceTree = "<group>"; };
+		8105E26A26C69AA000C22BE4 /* CombinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationView.swift; sourceTree = "<group>"; };
 		812F873726C69A32002F0BE6 /* NotificationsAndDatePickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationsAndDatePickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812F873A26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAndDatePickersApp.swift; sourceTree = "<group>"; };
-		812F873C26C69A32002F0BE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		812F873C26C69A32002F0BE6 /* NotificationsExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsExampleView.swift; sourceTree = "<group>"; };
 		812F873E26C69A33002F0BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		812F874126C69A33002F0BE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +36,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8105E26726C69A7D00C22BE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				812F873C26C69A32002F0BE6 /* NotificationsExampleView.swift */,
+				8105E26826C69A9300C22BE4 /* DatePickerExampleView.swift */,
+				8105E26A26C69AA000C22BE4 /* CombinationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		812F872E26C69A32002F0BE6 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				812F873A26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift */,
-				812F873C26C69A32002F0BE6 /* ContentView.swift */,
+				8105E26726C69A7D00C22BE4 /* Views */,
 				812F873E26C69A33002F0BE6 /* Assets.xcassets */,
 				812F874026C69A33002F0BE6 /* Preview Content */,
 			);
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				812F873D26C69A32002F0BE6 /* ContentView.swift in Sources */,
+				8105E26926C69A9300C22BE4 /* DatePickerExampleView.swift in Sources */,
+				812F873D26C69A32002F0BE6 /* NotificationsExampleView.swift in Sources */,
+				8105E26B26C69AA000C22BE4 /* CombinationView.swift in Sources */,
 				812F873B26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

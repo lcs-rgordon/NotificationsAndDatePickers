@@ -11,7 +11,36 @@ import SwiftUI
 struct NotificationsAndDatePickersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            TabView {
+                
+                NavigationView {
+                    NotificationsExampleView()
+                }
+                .tabItem {
+                    Image(systemName: "note.text")
+                    Text("Notifications")
+                }
+
+                NavigationView {
+                    DatePickerExampleView()
+                }
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("Date Picker")
+                }
+
+                NavigationView {
+                    CombinationView()
+                }
+                .tabItem {
+                    Image(systemName: "hands.clap")
+                    Text("Combination")
+                }
+
+                
+            }
+            
         }
     }
 }
