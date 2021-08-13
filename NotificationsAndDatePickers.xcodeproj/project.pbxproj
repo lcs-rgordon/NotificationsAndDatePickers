@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8105E26926C69A9300C22BE4 /* DatePickerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8105E26826C69A9300C22BE4 /* DatePickerExampleView.swift */; };
 		8105E26B26C69AA000C22BE4 /* CombinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8105E26A26C69AA000C22BE4 /* CombinationView.swift */; };
+		8105E26E26C69BE400C22BE4 /* NotificationHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8105E26D26C69BE400C22BE4 /* NotificationHandlers.swift */; };
 		812F873B26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F873A26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift */; };
 		812F873D26C69A32002F0BE6 /* NotificationsExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F873C26C69A32002F0BE6 /* NotificationsExampleView.swift */; };
 		812F873F26C69A33002F0BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812F873E26C69A33002F0BE6 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		8105E26826C69A9300C22BE4 /* DatePickerExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerExampleView.swift; sourceTree = "<group>"; };
 		8105E26A26C69AA000C22BE4 /* CombinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationView.swift; sourceTree = "<group>"; };
+		8105E26D26C69BE400C22BE4 /* NotificationHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandlers.swift; sourceTree = "<group>"; };
 		812F873726C69A32002F0BE6 /* NotificationsAndDatePickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationsAndDatePickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812F873A26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAndDatePickersApp.swift; sourceTree = "<group>"; };
 		812F873C26C69A32002F0BE6 /* NotificationsExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsExampleView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8105E26C26C69BD400C22BE4 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				8105E26D26C69BE400C22BE4 /* NotificationHandlers.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
 		812F872E26C69A32002F0BE6 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				812F873A26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift */,
+				8105E26C26C69BD400C22BE4 /* Handlers */,
 				8105E26726C69A7D00C22BE4 /* Views */,
 				812F873E26C69A33002F0BE6 /* Assets.xcassets */,
 				812F874026C69A33002F0BE6 /* Preview Content */,
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8105E26E26C69BE400C22BE4 /* NotificationHandlers.swift in Sources */,
 				8105E26926C69A9300C22BE4 /* DatePickerExampleView.swift in Sources */,
 				812F873D26C69A32002F0BE6 /* NotificationsExampleView.swift in Sources */,
 				8105E26B26C69AA000C22BE4 /* CombinationView.swift in Sources */,
@@ -291,9 +303,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +316,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,9 +334,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,7 +347,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
