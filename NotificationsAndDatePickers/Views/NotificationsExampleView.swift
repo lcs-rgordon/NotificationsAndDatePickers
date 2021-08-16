@@ -71,7 +71,10 @@ struct NotificationsExampleView: View {
                             .keyboardType(.decimalPad)
                     }
 
-                    Group {
+                    HStack {
+                        
+                        Spacer()
+                        
                         Button(action: {
                             publishNotification(title: title,
                                                 subtitle: subtitle,
@@ -83,8 +86,10 @@ struct NotificationsExampleView: View {
                             .buttonStyle(.borderedProminent)
                             .padding(.bottom)
                         
-                        Text("**NOTE:** Notifications will only appear on the home or lock screen.")
+                        Spacer()
                     }
+                        
+                    Text("**NOTE:** Notifications will only appear on the home or lock screen.")
                     
                 }
                 .padding(.horizontal)
