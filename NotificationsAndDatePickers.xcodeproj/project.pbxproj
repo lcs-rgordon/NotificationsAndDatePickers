@@ -14,6 +14,11 @@
 		812F873D26C69A32002F0BE6 /* NotificationsExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F873C26C69A32002F0BE6 /* NotificationsExampleView.swift */; };
 		812F873F26C69A33002F0BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812F873E26C69A33002F0BE6 /* Assets.xcassets */; };
 		812F874226C69A33002F0BE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812F874126C69A33002F0BE6 /* Preview Assets.xcassets */; };
+		81524A6226CA9569001F9E78 /* PastDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81524A6126CA9569001F9E78 /* PastDatesView.swift */; };
+		81524A6426CA9658001F9E78 /* FutureDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81524A6326CA9658001F9E78 /* FutureDatesView.swift */; };
+		81524A6926CA9842001F9E78 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81524A6826CA9842001F9E78 /* Section.swift */; };
+		81524A6B26CA98D4001F9E78 /* Sub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81524A6A26CA98D4001F9E78 /* Sub.swift */; };
+		81524A6D26CA99DC001F9E78 /* AnyDatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81524A6C26CA99DC001F9E78 /* AnyDatesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		812F873C26C69A32002F0BE6 /* NotificationsExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsExampleView.swift; sourceTree = "<group>"; };
 		812F873E26C69A33002F0BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		812F874126C69A33002F0BE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81524A6126CA9569001F9E78 /* PastDatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastDatesView.swift; sourceTree = "<group>"; };
+		81524A6326CA9658001F9E78 /* FutureDatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureDatesView.swift; sourceTree = "<group>"; };
+		81524A6826CA9842001F9E78 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		81524A6A26CA98D4001F9E78 /* Sub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sub.swift; sourceTree = "<group>"; };
+		81524A6C26CA99DC001F9E78 /* AnyDatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDatesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,8 @@
 		8105E26726C69A7D00C22BE4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				81524A6526CA97E6001F9E78 /* TextFormatting */,
+				81524A6026CA9554001F9E78 /* DatePickers */,
 				812F873C26C69A32002F0BE6 /* NotificationsExampleView.swift */,
 				8105E26826C69A9300C22BE4 /* DatePickerExampleView.swift */,
 				8105E26A26C69AA000C22BE4 /* CombinationView.swift */,
@@ -90,6 +102,25 @@
 				812F874126C69A33002F0BE6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81524A6026CA9554001F9E78 /* DatePickers */ = {
+			isa = PBXGroup;
+			children = (
+				81524A6126CA9569001F9E78 /* PastDatesView.swift */,
+				81524A6326CA9658001F9E78 /* FutureDatesView.swift */,
+				81524A6C26CA99DC001F9E78 /* AnyDatesView.swift */,
+			);
+			path = DatePickers;
+			sourceTree = "<group>";
+		};
+		81524A6526CA97E6001F9E78 /* TextFormatting */ = {
+			isa = PBXGroup;
+			children = (
+				81524A6826CA9842001F9E78 /* Section.swift */,
+				81524A6A26CA98D4001F9E78 /* Sub.swift */,
+			);
+			path = TextFormatting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +195,14 @@
 			files = (
 				8105E26E26C69BE400C22BE4 /* NotificationHandlers.swift in Sources */,
 				8105E26926C69A9300C22BE4 /* DatePickerExampleView.swift in Sources */,
+				81524A6226CA9569001F9E78 /* PastDatesView.swift in Sources */,
 				812F873D26C69A32002F0BE6 /* NotificationsExampleView.swift in Sources */,
 				8105E26B26C69AA000C22BE4 /* CombinationView.swift in Sources */,
+				81524A6926CA9842001F9E78 /* Section.swift in Sources */,
+				81524A6426CA9658001F9E78 /* FutureDatesView.swift in Sources */,
 				812F873B26C69A32002F0BE6 /* NotificationsAndDatePickersApp.swift in Sources */,
+				81524A6B26CA98D4001F9E78 /* Sub.swift in Sources */,
+				81524A6D26CA99DC001F9E78 /* AnyDatesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

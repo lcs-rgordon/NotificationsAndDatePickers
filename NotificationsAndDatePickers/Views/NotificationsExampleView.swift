@@ -34,29 +34,22 @@ struct NotificationsExampleView: View {
 
                 Group {
                          
-                    
-                    Text("Notification Details")
-                        .font(.title2)
-                        .bold()
-                        .padding(.bottom)
+                    Section(title: "Notification Details")
                     
                     Group {
-                        Text("Title")
-                            .bold()
+                        Sub(title: "Title")
                         TextField("Title", text: $title, prompt: Text("e.g.: Return to Campus Suggested"))
                             .padding(.bottom)
                     }
 
                     Group {
-                        Text("Subtitle")
-                            .bold()
+                        Sub(title: "Subtitle")
                         TextField("Subtitle", text: $subtitle, prompt: Text("e.g.: 40 minutes of leave time remain"))
                             .padding(.bottom)
                     }
 
                     Group {
-                        Text("Body")
-                            .bold()
+                        Sub(title: "Body")
                         TextEditor(text: $messageBody)
                             .multilineTextAlignment(.leading)
                             .padding(.bottom)
@@ -64,8 +57,7 @@ struct NotificationsExampleView: View {
                     }
 
                     Group {
-                        Text("Seconds Until Notification Appears")
-                            .bold()
+                        Sub(title: "Seconds Until Notification Appears")
                         TextField("Seconds Until Notification Appears", text: $secondsUntilPosted, prompt: Text("15"))
                             .padding(.bottom)
                             .keyboardType(.decimalPad)
