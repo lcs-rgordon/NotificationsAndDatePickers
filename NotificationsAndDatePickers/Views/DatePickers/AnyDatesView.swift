@@ -14,7 +14,7 @@ struct AnyDatesView: View {
         return formatter
     }()
     
-    @State private var birthDate = Date()
+    @State private var someDate = Date()
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -24,12 +24,12 @@ struct AnyDatesView: View {
             Text("By omitting the `in:` parameter, this date picker allows selection of any date, past, present, or future.")
                 .multilineTextAlignment(.leading)
             
-            DatePicker(selection: $birthDate, displayedComponents: .date) {
+            DatePicker(selection: $someDate, displayedComponents: .date) {
                 Text("Select a date")
                     .bold()
             }
             
-            Text("Date is \(birthDate, formatter: dateFormatter)")
+            Text("Date is \(someDate, formatter: dateFormatter)")
         }
         .padding()
     }

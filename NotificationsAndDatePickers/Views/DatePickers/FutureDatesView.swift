@@ -15,7 +15,7 @@ struct FutureDatesView: View {
         return formatter
     }()
     
-    @State private var birthDate = Date()
+    @State private var futureDate = Date()
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -26,12 +26,12 @@ struct FutureDatesView: View {
                 .multilineTextAlignment(.leading)
             
             
-            DatePicker(selection: $birthDate, in: Date()..., displayedComponents: .date) {
+            DatePicker(selection: $futureDate, in: Date()..., displayedComponents: .date) {
                 Text("Select a date")
                     .bold()
             }
             
-            Text("Date is \(birthDate, formatter: dateFormatter)")
+            Text("Date is \(futureDate, formatter: dateFormatter)")
         }
         .padding()
     }
