@@ -23,7 +23,7 @@ struct CombinationView: View {
             
             VStack(alignment: .leading) {
                 
-                Text("Here we allow the user to select some date and time in the future, and do some arithmetic to determine the number of seconds between the current date and time and that was selected. A notification is schedule based upon that difference.")
+                Text("Here we allow the user to select some date and time in the future, and do some arithmetic to determine the number of seconds between the current date and time and that was selected. A notification is scheduled based upon that difference.")
                     .multilineTextAlignment(.leading)
                 
                 HStack {
